@@ -12,3 +12,4 @@ Route::get('/Halo', function() {return 'Halo, Selamat Datang di Praktikum Larave
 Route::get('/user/{id}', function($id){return "Profil User dengan ID :".$id;});
 Route::get('/produk/{slug?}',function($slug='semua-produk'){return "Menampilkan :".$slug;});
 Route::get('/mahasiswa', [MahasiswaController::class,'index']);
+Route::get('/profile', [MahasiswaController::class,'profile']);
